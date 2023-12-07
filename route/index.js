@@ -1,6 +1,8 @@
-const express = require('express');
+import express from 'express';
+import issueTrackerPath from './issueTracker';
+
 const router = express.Router();
-const issueTrackerPath = require('./issueTracker')
+
 
 router.get('/', (req,res)=>{res.redirect('/issueTracker')})
 
